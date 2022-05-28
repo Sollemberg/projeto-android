@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padao: Arial verdana Helvetica sans-serif;
+    --font-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'android', sans-serif; 
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body { 
+    font-family: var(--fonte-padao);
+    background-color: var(--cor0);
+}
+header{
+   background-image: linear-gradient(to bottom, var(--cor3), var(--cor4), var(--cor5));
+   min-height: 150px;
+   text-align: center;
+   padding-top: 40px;
+   
+}
+
+header > h1{
+    color: white;
+    font-family: var(--font-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+header > p{
+    font-family: var(--fonte-padao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.367);
+} 
+nav{
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.452);
+}
+nav > a{
+    color: var(--cor1);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 55px;
+    transition-duration: .7s
+}
+a:c
+nav > a:hover{
+    color: var(--cor5);
+    background-color: var(--cor1);
+
+}
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.781); 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main h1{
+    font-family: var(--fonte-android);
+    color: var(--cor5);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+main h2{
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+    font-size: 1.3em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor2), var(--cor1), transparent);
+    text-indent: 8px;
+}
+main p {
+    padding-top: 15px 0 px;
+    text-align: justify;
+    padding-left: 10px;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+main strong{
+    color: var(--cor4);
+    font-weight: bolder
+}
+main a {
+    text-decoration: none;
+    color: var(--cor5);
+    background-color: var(--cor2);
+    font-weight: bold
+}
+main a:hover{
+    color: var(--cor4);
+    background-color: var(--cor2);
+    text-decoration: underline;
+    
+}
+a.externo::after{
+    content: '\1F517'; /*Olhar o que faz essa (CONTENT)*/
+}
+main img{
+    width: 100%;
+}
+main img.pequena{
+    max-width: 350px;
+    display: block; /* USA O DISPLAY BLOCK POR QUE A IMAGEM NÃO É UM BLOCO POR ISSO ELA NÃO CENTRALIZOU COM A TAG MARGIN.*/
+    margin: auto;
+}
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.438);    
+}
+aside ul{
+     list-style-type: '\2714\00A0\00A0'; /*esse (2714) é o ícone de certo da lista. Esse (00A0) é comando que representa espaço. Obs:usa eles dentro de (\). */
+    list-style-position: inside; /*para jogar a lista pra dentro da minha caixa */
+    columns: 2;
+}
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footera:hover{
+    text-decoration: underline;
+}
